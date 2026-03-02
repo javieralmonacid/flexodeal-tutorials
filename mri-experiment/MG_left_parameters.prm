@@ -21,7 +21,7 @@ subsection Geometry
   set Global refinement   = 2
 
   # Muscle length [m]
-  set Muscle length = 0.27
+  set Muscle length = 0.247789
 
   # Aponeurosis length [m]
   set Aponeurosis length = 0.208
@@ -70,7 +70,7 @@ subsection Linear solver
   # Small problems (Grid refinement level 1 or 2) can usually be solved
   # using the Direct (UMFPACK) solver without issues. However, for larger
   # problems, a CG solver with a Jacobi preconditioner is recommended.
-  set Solver type              = Direct
+  set Solver type              = CG
 end
 
 
@@ -192,7 +192,7 @@ subsection Time
   # End time [s]
   # To obtain data for the very last time step, add 1e-08 to
   # the desired end time
-  set End time       = 1.00000001
+  set End time       = 4.28000001
 
   # Time step size [s]
   set Time step size = 0.01
@@ -212,7 +212,7 @@ subsection Measuring locations
     # the solver returns the error: "The evaluation point ... was not 
     # found among the vertices of the present grid."
 
-    set Markers list file = markers.dat
+    set Markers list file = ../MG_left_markers.dat
 end
 
 subsection Output binary files
