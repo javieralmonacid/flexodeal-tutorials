@@ -4,3 +4,6 @@
 [submodule "mri-experiment/msh2vtk"]
 	path = mri-experiment/msh2vtk
 	url = git@github.com:javieralmonacid/msh2vtk.git
+[submodule "mri-experiment/flexodeal"]
+	path = mri-experiment/flexodeal
+	url = git@github.com:javieralmonacid/flexodeal.git
