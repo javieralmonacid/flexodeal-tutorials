@@ -234,6 +234,8 @@ void Geometry<dim>::tag_boundaries()
   }
 
   double muscle_length = max_x - min_x;
+  std::cout << "Muscle length:           " << muscle_length << std::endl;
+
   // Decide the fraction of the domain (in the longitudinal direction)
   // that will be considered a Dirichlet boundary.
   double fraction_left = 0.02;
