@@ -1,0 +1,6 @@
+[submodule "msh2vtk"]
+	path = msh2vtk
+	url = git@github.com:javieralmonacid/msh2vtk.git
+[submodule "mri-experiment/msh2vtk"]
+	path = mri-experiment/msh2vtk
+	url = git@github.com:javieralmonacid/msh2vtk.git
