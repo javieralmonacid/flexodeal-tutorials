@@ -35,7 +35,7 @@ subsection Geometry
   # Pennation angle muscle fibres [deg]
   # This is the angle between the fibres and the line
   # of action (LOA), which is taken here as the x-axis.
-  set Pennation angle = 15.3
+  set Pennation angle = 20.0
 
   # Global grid scaling factor (note that this factor
   # scales the grid and nothing else)
@@ -70,7 +70,7 @@ subsection Linear solver
   # Small problems (Grid refinement level 1 or 2) can usually be solved
   # using the Direct (UMFPACK) solver without issues. However, for larger
   # problems, a CG solver with a Jacobi preconditioner is recommended.
-  set Solver type              = CG
+  set Solver type              = Direct
 end
 
 
