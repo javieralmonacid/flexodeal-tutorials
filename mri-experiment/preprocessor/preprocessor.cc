@@ -206,8 +206,8 @@ void Geometry<dim>::align_line_of_action_with_x_axis()
   GridTools::rotate(Tensor<1,dim>({0,1,0}), -theta, triangulation);
   // 3) Rotate 90 degrees about y-axis to map aligned z-direction to x-axis
   GridTools::rotate(Tensor<1,dim>({0,1,0}), M_PI/2.0, triangulation);
-  // 4) Rotate 180 degrees about x-axis to enforce consistent orientation
-  GridTools::rotate(Tensor<1,dim>({1,0,0}), M_PI, triangulation);
+  // 4) Rotate 180 degrees about z-axis to enforce consistent orientation
+  GridTools::rotate(Tensor<1,dim>({0,0,1}), M_PI, triangulation);
 }
 
 // This function tags the boundaries *assuming the mesh has been aligned with
@@ -238,7 +238,7 @@ void Geometry<dim>::tag_boundaries()
 
   // Decide the fraction of the domain (in the longitudinal direction)
   // that will be considered a Dirichlet boundary.
-  double fraction_left = 0.02;
+  double fraction_left = 0.09;
   double fraction_right = 0.02;
   
   // Loop over all cells and tag boundaries. We want:
